@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev #用dev中配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update #create：每次都建立一个空都表，如有则先删除。update：表中如有数据会保留。create-drop：应用停下来时，把表删除。none：什么都不做。validate：验证属性和表结构是否一致，不一致报错。
+    show-sql: true  #配置打印sql语句
